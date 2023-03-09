@@ -1,0 +1,47 @@
+$def with (content)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi - $content.title</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="navbar sticky-top navbar-expand-lg main-nav">
+    <div class="container">
+      <a class="logo" href="/muhikram/">Punya.dev</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto py-3">
+          $for i in app_menu():
+                $ a = ''
+                $if content.menu == i[0]:
+                    $ a = ' class="active"'
+                <a class="nav-link px-3" href="/muhikram$i[2]"$:a>$i[1]</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <br>
+      <div class="content">
+          $:content
+      </div>
+
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

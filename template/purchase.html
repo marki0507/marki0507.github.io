@@ -1,0 +1,24 @@
+$def with(data, content, records)
+$var title = data['title']
+$var menu = data['menu']
+
+<div class="text-center">
+$:content
+<br>
+<table class="table table-bordered border-light" >
+    <tr>
+        <th>PURCHASE_ID</th>
+        <th>NAMA</th>
+        <th>KUANTITAS</th>
+        <th>HARGA</th>
+
+    </tr>
+$for i in records:
+    <tr>
+        <td>$i.purchase_id</td>
+        <td>$i.Nama</td>
+        <td>$i.Kuantitas</td>
+        <td>$i.Harga</td>
+    </tr>
+</table>
+</div>

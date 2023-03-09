@@ -1,0 +1,112 @@
+$def with (data)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Keempat</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+<style>
+  .logo{
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      
+    }
+  body{
+    background-color: #f35b04;
+    color: white;
+    font-size: 20px;
+  }
+  .body{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+      .main-nav {
+        /* background-color: #ffb703; */
+        background-color: #003049;
+      }
+
+      .main-nav .navbar-nav a.nav-link {
+        color: white;
+        font-size: 20px;
+        font-weight: 20px;
+        margin: 5px;
+      }
+
+      .main-nav .navbar-nav .nav-link.active,
+      .main-nav .navbar-nav .nav-link:hover {
+        transition: 0.2s linear;
+        /* background-color: #fb5607; */
+        background-color: #c47114;
+        border-radius: 10px;
+        /* color: #fb5607; */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar sticky-top navbar-expand-lg main-nav">
+      <div class="container">
+        <a class="logo" href="/muhikram/index">Punya.dev</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto py-3">
+            <a class="nav-link px-3" aria-current="page" href="/muhikram/waktu"
+              >Index</a
+            >
+            
+            <a class="nav-link px-3" href="/muhikram/learn/post"
+              >Learn/post</a
+            >
+
+            <a
+            class="nav-link px-3"
+            href="/muhikram/learn/get?name=a&status=b&age=100"
+            >Get/post</a
+          >
+            <a class="nav-link active px-3" href="/muhikram/hello/world"
+            >Hello World</a
+          >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body">
+  String a pada variabel data: <br> 
+  $data['a']<br>
+  List b pada variabel data:<br>
+  $for i in data['b']:
+      $if i%2 == 0:
+          $ t = 'genap'
+      $else:
+          $ t = 'ganjil'
+      $i: $t<br>
+  Pemanggilan fungsi test_func: $test_func()<br>
+  Kode HTML difilter: $:data['c']<br>
+  Kode HTML dirender: $:data['c']<br>
+
+  $:data['d']<br>
+  $:data['e']<br>
+  $:data['d'] $:data['e']
+</div>
+</body>
+</html>
