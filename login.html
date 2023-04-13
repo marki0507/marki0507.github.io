@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singkong.dev</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- sticky-top : untuk membuat header atau navbarnya selalu dibagian atas -->
+    <header class="navbar sticky-top navbar-expand-lg main-nav">
+      <div class="container">
+        <h4>Store Manager</h4>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="dasbor.html"
+              >Masuk</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BAGIAN SECTION -->
+    <!-- <section class="section">
+      <div class="card">
+      <div class="card-body">
+        <div class="h1 text-center"><h1>LOGIN</h1></div>
+        <form method='post' action=''>
+          <div class="form-group">
+            <label for="name">Email or Username:</label>
+            <input name='name' class="form-control" placeholder="Email or Username" value='' />
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="name">Password:</label>
+            <input type='password' class="form-control" name='password'placeholder="Password" />
+          </div>
+          <br />
+          <div class="text-center">
+            <input type="submit" class="btn btn-primary" value="Masuk">
+            </input>
+          </div>
+        </form>
+      </div>
+    </div>
+</section> -->
+
+<section class="login">
+  <div class="container main">
+    <div class="row">
+      <!-- left -->
+      <div class="col-md-6 side-image">
+      </div>
+      <!-- right -->
+      <div class="col-md-6 right">
+        <div class="form">
+          <header>Login</header>
+          <div class="input-field">
+            <input
+              type="text"
+              class="input"
+              id="email"
+              required
+              autocomplete="off" />
+            <label for="email">Email or Username</label>
+          </div>
+          <div class="input-field">
+            <input type="password" class="input" id="password" required />
+            <label for="password">Password</label>
+          </div>
+          <div class="input-field">
+            <input type="submit" class="submit" value="Sign Up" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- <footer class="footer fixed-bottom">
+      <div class="footer1 text-center py-3">
+        <p id="tahun-copyright">&copy; 2023 Store Manager</p>
+      </div>
+    </footer> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

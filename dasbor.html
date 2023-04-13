@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singkong.dev</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- sticky-top : untuk membuat header atau navbarnya selalu dibagian atas -->
+    <header class="navbar sticky-top navbar-expand-lg main-nav">
+      <div class="container">
+        <h4>Store Manager</h4>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active " aria-current="page" href="dasbor.html"
+              >Dasbor</a
+            >
+            <a class="nav-link " aria-current="page" href="produk.html"
+              >Produk</a
+            >
+            <a class="nav-link " aria-current="page" href="pelanggan.html"
+              >Pelanggan</a
+            >
+            <a class="nav-link " aria-current="page" href="pesanan.html"
+              >Pesanan</a
+            >
+            <a class="nav-link " aria-current="page" href="laporan.html"
+              >Laporan</a
+            >
+            <a class="nav-link " aria-current="page" href="login.html"
+              >Keluar</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BAGIAN SECTION -->
+
+      <section class="section1">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col col-md-4">
+            <div class="card1 h-100">
+              <div class="card-body1">
+                <h5 class="card-header1">Akun</h5>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary">
+                    Ganti Password
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card1 h-100">
+              <div class="card-body1">
+                <h5 class="card-header1">Pelanggan</h5>
+                <canvas id="pelanggan"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="script.js"></script>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4">
+            <div class="card1 h-100">
+              <div class="card-body1">
+                <h5 class="card-header1">Pesanan</h5>
+                <canvas canvas id="pesanan"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="script.js"></script>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-4 offset-md-4">
+            <div class="card1 h-100">
+              <div class="card-body1">
+                <h5 class="card-header1">Rincian sinkronisasi</h5>
+                <p class="card-text">(Menunggu pengujian awal aplikasi)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+
+    <!-- <footer class="footer">
+      <div class="footer1 text-center py-3">
+        <p id="tahun-copyright">&copy; 2023 Store Manager</p>
+      </div>
+    </footer> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

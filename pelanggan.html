@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singkong.dev</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- sticky-top : untuk membuat header atau navbarnya selalu dibagian atas -->
+    <header class="navbar sticky-top navbar-expand-lg main-nav">
+      <div class="container">
+        <h4>Store Manager</h4>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto ">
+            <a class="nav-link a1" aria-current="page" href="dasbor.html"
+              >Dasbor</a
+            >
+            <a class="nav-link a2" aria-current="page" href="produk.html"
+              >Produk</a
+            >
+            <a class="nav-link active a3" aria-current="page" href="pelanggan.html"
+              >Pelanggan</a
+            >
+            <a class="nav-link a4" aria-current="page" href="pesanan.html"
+              >Pesanan</a
+            >
+            <a class="nav-link a5" aria-current="page" href="laporan.html"
+              >Laporan</a
+            >
+            <a class="nav-link a6" aria-current="page" href="login.html"
+              >Keluar</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <section class="pelanggan">
+    <div class="card3">
+      <div class="card-header3">
+        <h5>Produk</h5>
+        <div>
+          <button class="btn btn-primary">Tambah</button>
+        </div>
+      </div>
+      <div class="card-body3">
+        <form class="d-flex mb-3">
+          <input class="form-control me-2 " type="search" placeholder="Bagian Nama atau Store" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+    
+
+    <!-- <footer class="footer fixed-bottom">
+      <div class="footer1 text-center py-3">
+        <p id="tahun-copyright">&copy; 2023 Store Manager</p>
+      </div>
+    </footer> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

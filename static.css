@@ -1,0 +1,349 @@
+/* BAGIAN NAVBAR */
+.navbar {
+  /* background-color: #ff4f00; */
+  color: white;
+}
+
+.main-nav a {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  font-weight: 20px;
+  transition: color 0.3s ease-in-out;
+}
+.main-nav .navbar-nav a.active {
+  color: #f18701;
+}
+.main-nav .navbar-nav a.active,
+.main-nav .navbar-nav a:hover {
+  font-size: 20px;
+  transition: 0.2s linear;
+  /* background-color: #ffff; */
+  color: #f18701;
+  /* border-radius: 10px; */
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #fff;
+  transform: scaleX(1);
+}
+
+.navbar-toggler {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main-nav {
+  /* background-color: #fff; */
+  transition: background-color 0.3s ease-in-out;
+}
+.main-nav.scrolled {
+  /* background-color: #f18701; */
+  background-color: #e9c46a;
+}
+.main-nav.scrolled a {
+  color: #fff;
+}
+
+/* BAGIAN FOOTER */
+.footer {
+  background-color: #ff4f00;
+  color: white;
+}
+
+/* BAGIAN LOGIN */
+body {
+  background-image: url("image/image.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+/* .login{
+  padding: 0 20px 0 20px;
+} */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+}
+.login .row {
+  width: 900px;
+  height: 550px;
+  border-radius: 10px;
+  background: #fff;
+  /* background: #f18701; */
+  /* box-shadow: 3px 3px 7px 0px #f18701; */
+}
+.side-image {
+  background-image: url("image/img2.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat;
+    position: relative; */
+  border-radius: 10px 0 0 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form {
+  width: 330px;
+  box-sizing: border-box;
+}
+.form header {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 10px 0 10px;
+}
+.input {
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-bottom: 20px;
+  color: #40414a;
+}
+.form .input-field label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-field .input:focus ~ label {
+  top: -10px;
+  font-size: 13px;
+}
+.input-field .input:valid ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #5d5076;
+}
+.input-field .input:focus,
+.input-field .input:valid {
+  border-bottom: 1px solid #f18701;
+}
+.submit {
+  border: none;
+  outline: none;
+  height: 45px;
+  background: #ececec;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.submit:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+/* BAGIAN DASBOR */
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70vh;   */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* flex-wrap: wrap; */
+}
+
+.card1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  padding: 5px;
+  background-color: #fff;
+  width: 400px;
+  border-color: #f18701;
+}
+
+.card-header1 {
+  background-color: #ff4f00;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+.card-body1 {
+  padding: 10px;
+}
+
+canvas {
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* BAGIAN PRODUK */
+.produk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70vh;   */
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* flex-wrap: wrap; */
+}
+
+.card2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  padding: 5px;
+  background-color: #fff;
+  width: 1200px;
+  border-color: #f18701;
+}
+
+.card-header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4f00;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+.card-body2 {
+  padding: 10px;
+}
+
+.card-body2 {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: auto;
+  width: 70%;
+}
+
+.btn-outline-success {
+  width: 30%;
+}
+
+.tbl1 {
+  background-color: #f18701;
+  color: white;
+}
+
+.table {
+  margin-bottom: 20px;
+}
+
+.cek {
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+/* BAGIAN PELANGGAN */
+.pelanggan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70vh;   */
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* flex-wrap: wrap; */
+}
+
+.card3 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+  padding: 5px;
+  background-color: #fff;
+  width: 1200px;
+  border-color: #f18701;
+}
+
+.card-header3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4f00;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+.card-body3 {
+  padding: 10px;
+}
+
+.card-body3 {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: auto;
+  width: 70%;
+}
+
+.btn-outline-success {
+  width: 30%;
+}
+
+/* from */
+#latar-belakang {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+/* Gaya untuk form */
+#form-tambah {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 2;
+  display: none;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-header4 {
+  color: white;
+}
